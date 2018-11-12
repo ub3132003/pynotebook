@@ -1,3 +1,4 @@
+import time
 # 输出重定向
 
 # 装饰函数 发送到卡夫卡
@@ -14,9 +15,9 @@ def output2kafka(producer,topic,key=None,partition=None):
     
     def func(functionName):
         def func_in(*args, **kwargs):
-            #print("-----记录日志-----")
             ret = functionName(*args, **kwargs)
             producer.send(topic,value=ret,key=key,partition=partition)
+            print("-----记录日志-----send",time.time())
             return ret
         return func_in
     return func
@@ -28,7 +29,7 @@ def output2kafka(producer,topic,key=None,partition=None):
 """DataConvers"""
 import numpy as np
 import json 
-def kvFaceEmbedding(functionName):
+def kvFaceEmbedding2kakfa(functionName):
     """
     dict -> bytes
     {name(str):embedding(float64 list)}

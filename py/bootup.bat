@@ -1,0 +1,1 @@
+jupyter notebook --ip=192.168.1.123 --allow-root   --port  8888 --no-browser --notebook-dir "C:\Users\sun\OneDrive\code space\python\1notebook"   

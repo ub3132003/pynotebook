@@ -33,10 +33,10 @@
 32,Raichu,Electric,,485,60,90,55,90,80,110,1,FALSE
 33,Sandshrew,Ground,,300,50,75,85,20,30,40,1,FALSE
 34,Sandslash,Ground,,450,75,100,110,45,55,65,1,FALSE
-35,Nidoranâ™€,Poison,,275,55,47,52,40,40,41,1,FALSE
+35,Nidoran,Poison,,275,55,47,52,40,40,41,1,FALSE
 36,Nidorina,Poison,,365,70,62,67,55,55,56,1,FALSE
 37,Nidoqueen,Poison,Ground,505,90,92,87,75,85,76,1,FALSE
-38,Nidoranâ™?Poison,,46,228,57,40,40,40,50,1,FALSE,
+38,Nidoran,Poison,,273,46,57,40,40,40,50,1,FALSE
 39,Nidorino,Poison,,365,61,72,57,55,55,65,1,FALSE
 40,Nidoking,Poison,Ground,505,81,102,77,85,75,85,1,FALSE
 41,Clefairy,Fairy,,323,70,45,48,60,65,35,1,FALSE
@@ -61,7 +61,7 @@
 60,Psyduck,Water,,320,50,52,48,65,50,55,1,FALSE
 61,Golduck,Water,,500,80,82,78,95,80,85,1,FALSE
 62,Mankey,Fighting,,305,40,80,35,35,45,70,1,FALSE
-63,,Fighting,,455,65,105,60,60,70,95,1,FALSE
+63,Primeape,Fighting,,455,65,105,60,60,70,95,1,FALSE
 64,Growlithe,Fire,,350,55,70,45,70,50,60,1,FALSE
 65,Arcanine,Fire,,555,90,110,80,100,80,95,1,FALSE
 66,Poliwag,Water,,300,40,50,40,40,40,90,1,FALSE

@@ -1,0 +1,16 @@
+id,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary,Stage,id,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary,Stage
+3,Venusaur,Grass,Poison,525,80,82,83,100,100,80,1,FALSE,3,-3,Mega Venusaur,Grass,Poison,625,80,100,123,122,120,80,1,FALSE,4
+6,Charizard,Fire,Flying,534,78,84,78,109,85,100,1,FALSE,3,-6,Mega Charizard X,Fire,Dragon,634,78,130,111,130,85,100,1,FALSE,4
+6,Charizard,Fire,Flying,534,78,84,78,109,85,100,1,FALSE,3,-6.1,Mega Charizard Y,Fire,Flying,634,78,104,78,159,115,100,1,FALSE,4
+9,Blastoise,Water,NaN,530,79,83,100,85,105,78,1,FALSE,3,-9,Mega Blastoise,Water,,630,79,103,120,135,115,78,1,FALSE,4
+15,Beedrill,Bug,Poison,395,65,90,40,45,80,75,1,FALSE,3,-15,Mega Beedrill,Bug,Poison,495,65,150,40,15,80,145,1,FALSE,4
+18,Pidgeot,Normal,Flying,479,83,80,75,70,70,101,1,FALSE,3,-17,Mega Pidgeot,Normal,Flying,579,83,80,80,135,80,121,1,FALSE,4
+65,Alakazam,Psychic,NaN,500,55,50,45,135,95,120,1,FALSE,2,-65,Mega Alakazam,Psychic,,590,55,50,65,175,95,150,1,FALSE,4
+80,Slowbro,Water,Psychic,490,95,75,110,100,80,30,1,FALSE,3,-80,Mega Slowbro,Water,Psychic,590,95,75,180,130,80,30,1,FALSE,4
+94,Gengar,Ghost,Poison,500,60,65,60,130,75,110,1,FALSE,2,-94,Mega Gengar,Ghost,Poison,600,60,65,80,170,95,130,1,FALSE,4
+115,Kangaskhan,Normal,NaN,490,105,95,80,40,80,90,1,FALSE,3,-115,Mega Kangaskhan,Normal,,590,105,125,100,60,100,100,1,FALSE,4
+127,Pinsir,Bug,NaN,500,65,125,100,55,70,85,1,FALSE,1,-127,Mega Pinsir,Bug,Flying,600,65,155,120,65,90,105,1,FALSE,4
+130,Gyarados,Water,Flying,540,95,125,79,60,100,81,1,FALSE,1,-130,Mega Gyarados,Water,Dark,640,95,155,109,70,130,81,1,FALSE,4
+142,Aerodactyl,Rock,Flying,515,80,105,65,60,75,130,1,FALSE,2,-142,Mega Aerodactyl,Rock,Flying,615,80,135,85,70,95,150,1,FALSE,4
+150,Mewtwo,Psychic,NaN,680,106,110,90,154,90,130,1,TRUE,1,-150,Mega Mewtwo X,Psychic,Fighting,780,106,190,100,154,100,130,1,TRUE,4
+150,Mewtwo,Psychic,NaN,680,106,110,90,154,90,130,1,TRUE,1,-150.1,Mega Mewtwo Y,Psychic,,780,106,150,70,194,120,140,1,TRUE,4

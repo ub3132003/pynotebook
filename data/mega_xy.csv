@@ -1,5 +1,0 @@
-id,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary,Stage,id,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary,Stage
-6,Charizard,Fire,Flying,534,78,84,78,109,85,100,1,FALSE,3,-6,Mega Charizard X,Fire,Dragon,634,78,130,111,130,85,100,1,FALSE,4
-6,Charizard,Fire,Flying,534,78,84,78,109,85,100,1,FALSE,3,-6.1,Mega Charizard Y,Fire,Flying,634,78,104,78,159,115,100,1,FALSE,4
-150,Mewtwo,Psychic,,680,106,110,90,154,90,130,1,TRUE,1,-150,Mega Mewtwo X,Psychic,Fighting,780,106,190,100,154,100,130,1,TRUE,4
-150,Mewtwo,Psychic,,680,106,110,90,154,90,130,1,TRUE,1,-150.1,Mega Mewtwo Y,Psychic,,780,106,150,70,194,120,140,1,TRUE,4

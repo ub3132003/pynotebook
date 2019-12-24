@@ -1,2 +1,9 @@
-module/tagData.csv
-data/tagData.csv
+*.jpg
+*.log
+schedule/dat.plk
+schedule/.idea/workspace.xml
+schedule/.idea/vcs.xml
+schedule/.idea/schedule.iml
+schedule/.idea/modules.xml
+schedule/.idea/misc.xml
+schedule/__pycache__/

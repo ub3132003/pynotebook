@@ -1,0 +1,12 @@
+[Unit]
+Description=download image from bing everday and copy to a path.
+After=network.target
+
+[Service]
+ExecStart=/root/anaconda3/bin/python3.7 -u download_bing_image_everyday.py
+WorkingDirectory=/data/image
+StandardOutput=inherit
+StandardError=inherit
+
+[Install]
+WantedBy=multi-user.target

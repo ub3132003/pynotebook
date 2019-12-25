@@ -1,5 +1,5 @@
 import requests
-from urllib.parse import urlsplit,urlparse,parse_qs
+from urllib.parse import urlsplit, urlparse, parse_qs
 from pathlib import Path
 import pickle
 import logging
@@ -9,7 +9,7 @@ import datetime
 import sys
 
 d = {"cnt": 0}
-last_img_name = ""
+last_img_uri = ""
 logging.basicConfig(level=logging.DEBUG,  # 控制台打印的日志级别
                     filename="img_everyday.log",
                     filemode='a',  ##模式，有w和a，w就是写模式，每次都会重新写日志，覆盖之前的日志
@@ -45,6 +45,8 @@ def get_img2():
 
 def get_img():
     global last_img_name
+    file_name = ""
+    save_uri = lambda: settings.SAVE_IMG_PATH + file_name
     r = requests.get(
         'https://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1')  # "https://bing.ioliu.cn/v1/?type=json")
     rjson = r.json()
@@ -54,14 +56,14 @@ def get_img():
     r = requests.get(img_url)
 
     r1 = urlsplit(img_url)
-    d_url_query =parse_qs(r1.query)
-    #file_name = Path(r1.path).name
+    d_url_query = parse_qs(r1.query)
+    # file_name = Path(r1.path).name
     file_name = d_url_query.get("id")[0]
-    Path(file_name).write_bytes(r.content)
+    Path(save_uri()).write_bytes(r.content)
 
     print("""=================================""")
     logging.info(f"I save the num {d['cnt']} {file_name}")
-    last_img_name = file_name
+    last_img_name = save_uri()
     with open("dat.plk", "rb") as f:
         pickle.load(f)
         d["cnt"] += 1
@@ -70,7 +72,7 @@ def get_img():
 
 
 def copy_img_to_path():
-    copyfile( Path(last_img_name),settings.DST_PATH)
+    copyfile(Path(last_img_name), settings.UPDATE_BANNER_IMG)
 
 
 import schedule
@@ -95,12 +97,13 @@ if __name__ == '__main__':
         with open("dat.plk", "rb") as f:
             d = pickle.load(f)
             print(d)
-    except:
+    except IOError:
         with open("dat.plk", "wb") as f:
             pickle.dump(d, f)
     get_img()
     copy_img_to_path()
     schedule.every().day.at("21:00").do(get_img)
+    schedule.every().day.at("20:00").do(copy_img_to_path)
     # schedule.every(10).seconds.do(get_img)
     while True:
         schedule.run_pending()
